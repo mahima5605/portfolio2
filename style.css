@@ -1,0 +1,113 @@
+/* style.css */
+body{
+    background: linear-gradient(to right, #0b1c24, #0e2a35);
+    color: white;
+    padding-top: 70px;
+}
+.nav-link:hover{
+    color: #0dcaf0 !important;
+}
+.active-link{
+    color: #0dcaf0 !important;
+}
+a.icons:hover{
+    color: white !important;
+}
+.nav {
+    background: rgba(33, 37, 41, 0.6);
+    backdrop-filter: blur(8px);
+}
+.icon-circle{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    transition: 0.3s;
+}
+.icon-circle:hover{
+   background-color: #0d6efd;
+   box-shadow: 0 0 10px gray;
+   transform: translateY(-3px);
+}
+.iconsdiv{
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.abt{
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+.abt:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(13,110,253,0.25);
+}
+.progress{
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+.progress-bar{
+    border-radius: 10px;
+}
+form {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+.form-control {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+.form-control::placeholder {
+    color: #696161;
+    font-style: italic;
+}
+.form-control:focus {
+    background: transparent;
+    color: white;
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+.modal-body img {
+    max-height: 70vh;
+    width: auto;
+    object-fit: contain;
+}
+.skills{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.scroll-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background: #0d6efd;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.scroll-top:hover {
+    background: #0dcaf0;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.profile{
+    width: 320px;        
+    height: auto;
+    object-fit: cover;   
+    border-radius: 10%;  
+    border: 2px solid #0d6efd;
+    box-shadow: 0 0 10px rgba(13,110,253,0.5);
+}
