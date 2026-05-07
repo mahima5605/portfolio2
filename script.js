@@ -4,7 +4,6 @@ window.addEventListener("scroll",()=>{
   let current = "";
   sections.forEach(section =>{
     const sectionTop= section.offsetTop - 120;
-    const sectionHeight= section.clientHeight;
     if(pageYOffset >= sectionTop) {
       current = section.getAttribute("id");
     }
@@ -50,3 +49,15 @@ let letter="";
     setTimeout(type,100);
   }
 })();
+
+const navItems = document.querySelectorAll(".nav-link");
+const navbarCollapse = document.querySelector(".navbar-collapse");
+navItems.forEach(item => {
+  item.addEventListener("click", () => {
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+      toggle: false
+    });
+
+    bsCollapse.hide();
+  });
+});
