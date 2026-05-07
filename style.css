@@ -97,6 +97,8 @@ form {
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    opacity: 0;
+    pointer-events: none;
 }
 .scroll-top:hover {
     background: #0dcaf0;
